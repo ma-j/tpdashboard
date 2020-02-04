@@ -73,8 +73,7 @@ section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 150px 150px 150px 150px;  
-    grid-column-gap: 5px;
-    grid-row-gap: 25px;
+    grid-gap: 25px;
 }
 h1{
     grid-column-start: 1;
@@ -87,11 +86,13 @@ h1{
     grid-row-start:2;
     grid-row-end: 3;
 }
+img{
+    width: 10%;  
+}
 #un{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 1/2;
     background: linear-gradient(0.25turn, #c42f2f, #119945);
-
 }
 #ligne2{
     grid-column-start: 1;
