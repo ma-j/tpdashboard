@@ -30,6 +30,9 @@ aside{
     top: 0;
     left: 0;
 }
+#profil{
+    width: 40%;
+}
 .un{
     text-align: center;
     position: relative;
@@ -73,10 +76,11 @@ section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 150px 150px 150px 150px;  
-    grid-gap: 50px;
+    grid-gap: 10rem;
 }
 h1{
     grid-column-start: 1;
+    grid-column-end:3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -85,12 +89,16 @@ h1{
     grid-column-end: 5;
     grid-row-start:2;
     grid-row-end: 3;
-}
-img{
-    width: 10%;  
+    background: linear-gradient(0.25turn, #ffffff, #898a89, #6b6a6a);
 }
 #un{
-    background: linear-gradient(0.25turn, #c42f2f, #119945);
+    grid-column: 1;
+}
+#deux{
+    grid-column: 2;
+}
+img{
+    width: 90%;  
 }
 #ligne2{
     grid-column-start: 1;
